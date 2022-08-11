@@ -1,0 +1,17 @@
+from pandas import Series
+arr=Series([15,25,35,78])
+print(arr)
+print(arr.index)
+print(arr.values)
+arr1=Series([115,25,35,78],index=[0,1,2,3])
+print(arr1)
+print(arr1.index)
+print(arr1.values)
+arr2=Series([21,23,24,27,29],index=['a','e','i','o','u'])
+print(arr2)
+print(arr2.index)
+print(arr2.values)
+arr2.index=['x','y','z','a','b']
+print(arr2)
+arr3=Series([84,48,69,69],index=[3,4,5,6,])
+print(arr3)

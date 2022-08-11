@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>List</title>
+</head>
+<body>
+
+<h3>Result Information</h3>
+<table border=5>
+    <thead>
+        <td>Id</td>
+        <td>Name</td>
+        <td>M1</td>
+        <td>M2</td>
+        <td>M3</td>
+        <td>Total</td>
+        <td>Average</td>
+
+    </thead>
+
+    {% for row in rows %}
+
+        <tr>
+            <td>{{row["Id"]}}</td>
+            <td>{{row["Name"]}}</td>
+            <td>{{row["M1"]}}</td>
+            <td>{{row["M2"]}}</td>
+            <td>{{row["M3"]}}</td>
+            <td>{{row["Total"]}}</td>
+            <td>{{row["Average"]}}</td>
+
+        </tr>
+
+    {% endfor %}
+</table>
+<br><br>
+
+<a href="/">Go back to home page</a>
+
+</body>
+</html>
